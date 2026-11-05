@@ -1,0 +1,85 @@
+
+# requirements.txt
+# Dependencias para CV Processor con módulo de base de datos
+
+# =============================
+# CORE - Flask y Web
+# =============================
+Flask==2.3.3
+Werkzeug==3.0.6
+python-dotenv==1.0.0
+pathlib~=1.0.1
+
+# =============================
+# EXTRACCIÓN DE TEXTO
+# =============================
+# Documentos Office
+python-docx==0.8.11
+
+# PDFs (múltiples estrategias)
+pdfplumber==0.10.2
+PyPDF2==3.0.1
+fitz~=0.0.1.dev2
+pytesseract~=0.3.13
+pdf2image~=1.16.3
+
+# OCR (opcional, comentar si no se usa)
+# pytesseract==0.3.10
+# pdf2image==1.16.3
+# Pillow==10.0.0
+
+# =============================
+# AZURE OPENAI
+# =============================
+requests==2.32.4
+
+# =============================
+# BASE DE DATOS
+# =============================
+pyodbc==5.0.1  # Conector principal para MySQL vía ODBC
+
+# =============================
+# UTILIDADES
+# =============================
+# Logging y monitoreo
+
+# Procesamiento de datos
+
+# Validación y seguridad
+
+# =============================
+# DESARROLLO (opcional)
+# =============================
+# pytest==7.4.2
+# pytest-cov==4.1.0
+# black==23.9.1
+# flake8==6.1.0
+# mypy==1.5.1
+
+# =============================
+# NOTAS DE INSTALACIÓN
+# =============================
+# 1. Crear entorno virtual:
+#    python -m venv venv
+#
+# 2. Activar entorno:
+#    Windows: venv\Scripts\activate
+#    Linux/Mac: source venv/bin/activate
+#
+# 3. Instalar dependencias:
+#    pip install -r requirements.txt
+#
+# 4. Para OCR (opcional):
+#    Descomentar las líneas de pytesseract y pdf2image
+#    Instalar Tesseract en el sistema:
+#    - Windows: https://github.com/UB-Mannheim/tesseract/wiki
+#    - Ubuntu: sudo apt-get install tesseract-ocr tesseract-ocr-spa
+#    - MacOS: brew install tesseract
+#
+# 5. Para pyodbc (IMPORTANTE):
+#    Requiere driver ODBC de MySQL instalado en el sistema
+#    Ver instrucciones en .env.example
+#
+# 6. Verificar instalación:
+#    python -c "import pyodbc; print(pyodbc.drivers())"
+#    Debe mostrar el driver MySQL ODBC

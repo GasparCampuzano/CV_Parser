@@ -1,0 +1,47 @@
+# Variables de entorno
+.env
+
+# Entorno virtual
+.venv/
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Storage
+storage/*
+!storage/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Base de datos locales
+*.db
+*.sqlite
+*.sqlite3
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~
